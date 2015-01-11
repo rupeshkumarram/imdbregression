@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="2" name="Failed suite [IMDB Regression]" parallel="none">
+  <test name="Execute Regression test cases(failed)" parallel="none">
+    <classes>
+      <class name="testscript.Summary_Search">
+        <methods>
+          <include name="search"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testscript.Summary_Search -->
+    </classes>
+  </test> <!-- Execute Regression test cases(failed) -->
+</suite> <!-- Failed suite [IMDB Regression] -->

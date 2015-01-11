@@ -1,0 +1,6 @@
+#List of global methods locatores
+#Sat Jan 03 00:42:53 IST 2015
+
+
+LoginLink.id=nblogin
+LoginLinkPopup.css=a.oauth-link[rel='open_google']

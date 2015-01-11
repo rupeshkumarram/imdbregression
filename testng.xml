@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="IMDB Regression" verbose="2" parallel="none">
+	<test name="Execute Regression test cases">
+		<classes>
+			<class name="testscript.Summary_Search"/>
+		</classes>
+	</test>
+</suite>

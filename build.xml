@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="IMDB_Regression" default="init" basedir=".">
+	<property name="src" value="${basedir}/src"/>
+	<property name="build" value="${basedir}/build"/>
+	<property name="result" value="${basedir}/output"/>
+
+<!-- Get classpath used for build -->
+
+	<property name="lib" value="${basedir}/Lib"/>
+	<path id="classpath">
+		<fileset dir="${lib}" includes="*.jar"/>
+		<pathelement location="build"/>
+	</path>
+	
+<!-- Create build folder, output folder and delete old one -->
+
+	<target name="init">
+		<delete dir="${build}"/>
+		<delete dir="${result}"/>
+		<delete dir="${basedir}/testng-xslt"/>
+		<mkdir dir="${build}"/>
+		<mkdir dir="${result}"/>
+		<mkdir dir="${basedir}/testng-xslt"/>
+	</target>
+	
+<!-- Build all java file to class binary -->
+
+	<target name="compile" depends="init">
+	<javac srcdir="${basedir}/src" destdir="${basedir}/build" classpathref="classpath" debug="true" target="1.8" >
+	<compilerarg value="-Xlint:unchecked"/>
+	</javac>
+	</target>
+	
+<!-- Config for testing -->
+
+	<tstamp>
+		<format property="start.time" pattern="MM/DD/YYYY hh:mm:aa" offset="-5" unit="hour"/>
+	</tstamp>
+	<condition property="ANT" value="${env.ANT_HOME}/bin/ant.bat" else="${env.ANT_HOME}/bin/ant">
+		<os family="windows"/>
+	</condition>
+	<taskdef name="testng" classpath="${basedir}/Lib/testng-6.8.5.jar" classname="org.testng.TestNGAntTask"/>
+	
+<!-- Execute testng after compile, Then generate report -->
+
+	<target name="run" depends="compile">
+		<!-- Config testng -->
+		<testng outputdir="${result}" classpathref="classpath" useDefaultListeners="true">
+		<!-- Execute test case using testng.xml -->
+		<xmlfileset dir="${basedir}" includes="testng.xml"/>
+		<!-- Generate report -->
+		<sysproperty key="org.uncommons.reportng.title" value="Test Automation"/>
+		<sysproperty key="org.uncommons.reportng.escape-output" value="false"/>
+		</testng>
+	</target>
+	
+<!-- Generate XSLT report -->
+
+	<target name="xslt" depends="run">
+		<xslt in="${basedir}/result/testng-results.xml" style="${basedir}/testng-results.xsl" out="${basedir}/testng-xslt/index.html" processor="SaxonLiaison">
+		<param expression="${basedir}/testng-xslt/" name="testNgXslt.outputDir"/>
+		<param expression="true" name="testNgXslt.sortTestCaseLinks"/>
+		<param expression="FAIL,SKIP,PASS,CONF,BY_CLASS" name="testNgXslt.testDetailsFilter"/>
+		<param expression="true" name="testNgXslt.showRuntimeTotals"/>
+		</xslt>
+	</target>
+</project>
+	
+		
