@@ -59,7 +59,7 @@ public class GMethods {
 			driver.switchTo().window(childWindow);
 		}
 		
-		driver.findElement(By.id(GEmail)).sendKeys("rupesh925@gmail.com");
+		driver.findElement(By.id(GEmail)).sendKeys("rupeshkmr1@gmail.com");
 		driver.findElement(By.id(GPassword)).sendKeys("25rk1983");
 		driver.findElement(By.id(GSignIn)).click();
 		
