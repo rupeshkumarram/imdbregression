@@ -1,3 +1,5 @@
 #List of global methods locatores
 #Sat Jan 03 00:43:39 IST 2015
-LoginLink.id=value
+
+NavbarQuickSearch.id=navbar-query
+NavbarSubmitButton.id=navbar-submit-button

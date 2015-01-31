@@ -3,4 +3,9 @@
 
 
 LoginLink.id=nblogin
-LoginLinkPopup.css=a.oauth-link[rel='open_google']
+LoginLinkPopup.xpath=.//*[@id='thirdparty']/div[2]/span[2]/a
+CloseFrame.id=cboxClose
+
+Googleemail.id=Email
+GooglePassword.id=Passwd
+GoogleSihnin.id=signIn

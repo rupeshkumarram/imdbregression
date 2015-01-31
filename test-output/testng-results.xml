@@ -1,100 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="IMDB Regression" duration-ms="120610" started-at="2015-01-05T06:27:04Z" finished-at="2015-01-05T06:29:04Z">
+  <suite name="IMDB Regression" duration-ms="103383" started-at="2015-01-30T03:42:12Z" finished-at="2015-01-30T03:43:55Z">
     <groups>
     </groups>
-    <test name="Execute Regression test cases" duration-ms="120610" started-at="2015-01-05T06:27:04Z" finished-at="2015-01-05T06:29:04Z">
+    <test name="Execute Regression test cases" duration-ms="103383" started-at="2015-01-30T03:42:12Z" finished-at="2015-01-30T03:43:55Z">
       <class name="testscript.Summary_Search">
-        <test-method status="FAIL" signature="setUp()[pri:0, instance:testscript.Summary_Search@47fd17e3]" name="setUp" is-config="true" duration-ms="0" started-at="2015-01-05T11:57:04Z" finished-at="2015-01-05T11:57:04Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Timed out after 10 seconds waiting for presence of element located by: By.selector: a.oauth-link[rel='open_google']
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
-System info: host: 'admin-PC', ip: '192.168.2.5', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=33.1.1, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 68b66495-312d-43e8-aed8-057305a01dc7]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for presence of element located by: By.selector: a.oauth-link[rel='open_google']
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
-System info: host: 'admin-PC', ip: '192.168.2.5', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=33.1.1, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 68b66495-312d-43e8-aed8-057305a01dc7
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at utility.GMethods.Login(GMethods.java:47)
-	at testscript.Summary_Search.setUp(Summary_Search.java:14)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:641)
-	at org.testng.TestRunner.run(TestRunner.java:609)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"a.oauth-link[rel='open_google']"}
-Command duration or timeout: 21 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
-System info: host: 'admin-PC', ip: '192.168.2.5', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=33.1.1, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 68b66495-312d-43e8-aed8-057305a01dc7
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$0(ExpectedConditions.java:728)
-	at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:106)
-	at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	... 24 more
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"a.oauth-link[rel='open_google']"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
-System info: host: 'admin-PC', ip: '192.168.2.5', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous3117790638843361200webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:26)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/admin/AppData/Local/Temp/anonymous3117790638843361200webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/admin/AppData/Local/Temp/anonymous3117790638843361200webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/admin/AppData/Local/Temp/anonymous3117790638843361200webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/admin/AppData/Local/Temp/anonymous3117790638843361200webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testscript.Summary_Search@17d99928]" name="setUp" is-config="true" duration-ms="54899" started-at="2015-01-30T09:12:12Z" finished-at="2015-01-30T09:13:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="search()[pri:0, instance:testscript.Summary_Search@47fd17e3]" name="search" duration-ms="1" started-at="2015-01-05T11:59:04Z" finished-at="2015-01-05T11:59:04Z">
+        <test-method status="PASS" signature="search_All()[pri:0, instance:testscript.Summary_Search@17d99928]" name="search_All" duration-ms="5308" started-at="2015-01-30T09:13:07Z" finished-at="2015-01-30T09:13:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- search -->
+        </test-method> <!-- search_All -->
+        <test-method status="PASS" signature="search_Bios()[pri:0, instance:testscript.Summary_Search@17d99928]" name="search_Bios" duration-ms="5429" started-at="2015-01-30T09:13:12Z" finished-at="2015-01-30T09:13:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search_Bios -->
+        <test-method status="PASS" signature="search_Characters()[pri:0, instance:testscript.Summary_Search@17d99928]" name="search_Characters" duration-ms="3962" started-at="2015-01-30T09:13:18Z" finished-at="2015-01-30T09:13:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search_Characters -->
+        <test-method status="PASS" signature="search_Companies()[pri:0, instance:testscript.Summary_Search@17d99928]" name="search_Companies" duration-ms="3073" started-at="2015-01-30T09:13:22Z" finished-at="2015-01-30T09:13:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search_Companies -->
+        <test-method status="PASS" signature="search_Keywords()[pri:0, instance:testscript.Summary_Search@17d99928]" name="search_Keywords" duration-ms="3229" started-at="2015-01-30T09:13:25Z" finished-at="2015-01-30T09:13:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search_Keywords -->
+        <test-method status="PASS" signature="search_Names()[pri:0, instance:testscript.Summary_Search@17d99928]" name="search_Names" duration-ms="4762" started-at="2015-01-30T09:13:28Z" finished-at="2015-01-30T09:13:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search_Names -->
+        <test-method status="PASS" signature="search_Plots()[pri:0, instance:testscript.Summary_Search@17d99928]" name="search_Plots" duration-ms="3713" started-at="2015-01-30T09:13:33Z" finished-at="2015-01-30T09:13:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search_Plots -->
+        <test-method status="PASS" signature="search_Quotes()[pri:0, instance:testscript.Summary_Search@17d99928]" name="search_Quotes" duration-ms="5090" started-at="2015-01-30T09:13:36Z" finished-at="2015-01-30T09:13:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search_Quotes -->
+        <test-method status="PASS" signature="search_TVEpisodes()[pri:0, instance:testscript.Summary_Search@17d99928]" name="search_TVEpisodes" duration-ms="9987" started-at="2015-01-30T09:13:41Z" finished-at="2015-01-30T09:13:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search_TVEpisodes -->
+        <test-method status="PASS" signature="search_Titles()[pri:0, instance:testscript.Summary_Search@17d99928]" name="search_Titles" duration-ms="3853" started-at="2015-01-30T09:13:51Z" finished-at="2015-01-30T09:13:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search_Titles -->
       </class> <!-- testscript.Summary_Search -->
     </test> <!-- Execute Regression test cases -->
   </suite> <!-- IMDB Regression -->

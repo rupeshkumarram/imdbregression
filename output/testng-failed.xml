@@ -5,8 +5,16 @@
     <classes>
       <class name="testscript.Summary_Search">
         <methods>
-          <include name="search"/>
+          <include name="search_Quotes"/>
+          <include name="search_Characters"/>
+          <include name="search_Keywords"/>
+          <include name="search_Names"/>
+          <include name="search_Plots"/>
+          <include name="search_Companies"/>
+          <include name="search_Titles"/>
+          <include name="search_Bios"/>
           <include name="setUp"/>
+          <include name="search_TVEpisodes"/>
         </methods>
       </class> <!-- testscript.Summary_Search -->
     </classes>
